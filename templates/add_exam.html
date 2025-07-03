@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Exam</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h2>Add Exam</h2>
+<form method="post">
+    Date: <input type="date" name="date"><br>
+    Session: <input type="text" name="session"><br>
+    Room Numbers (comma-separated): <input type="text" name="rooms"><br>
+    <input type="submit" value="Add Exam">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unassigned Rooms</title>
+</head>
+<body>
+    <h2>Invigilation Duty Assigned</h2>
+    {% if rooms %}
+        <h3>⚠️ The following rooms could not be assigned due to lack of available faculty:</h3>
+        <table border="1">
+            <tr>
+                <th>Date</th>
+                <th>Session</th>
+                <th>Room</th>
+            </tr>
+            {% for room in rooms %}
+            <tr>
+                <td>{{ room[0] }}</td>
+                <td>{{ room[1] }}</td>
+                <td>{{ room[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <br>
+        <a href="/export_unassigned">📥 Download as CSV</a>
+    {% else %}
+        <p>✅ All rooms successfully assigned with faculty!</p>
+    {% endif %}
+
+    <br><a href="/">Back to Home</a>
+</body>
+</html>

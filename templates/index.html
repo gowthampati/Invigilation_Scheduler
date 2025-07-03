@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invigilation Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>🎓 Invigilation Duty Scheduler</h2>
+    <ul>
+        <li><a href="/add_faculty">➕ Add Faculty</a></li>
+        <li><a href="/add_exam">🗓️ Add Exam</a></li>
+        <li><a href="/assign_duties">✅ Assign Duties</a></li>
+        <li><a href="/view_schedule">📋 View Schedule</a></li>
+        <li><a href="/export_schedule">📤 Export Schedule (CSV)</a></li>
+        <li><a href="/reset_schedule" style="color:red;">❌ Reset/Delete All Duties</a></li>
+    </ul>
+</body>
+</html>
